@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - A-Z Service App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-warning bg-warning">
+      <div class="container">
+        <a class="navbar-brand" href="/" class="text-warning">A-Z Service App</a>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1 class="text-center">Welcome to the A-Z Service App</h1>
+      <p class="text-center">Book or provide professional services with ease.</p>
+      <div class="d-flex justify-content-center mt-4">
+        <a href="{{ url_for('login') }}" class="btn btn-primary mx-2">Customer Login</a>
+        <a href="{{ url_for('login_professional') }}" class="btn btn-success mx-2">Professional Login</a>
+        <a href="{{ url_for('adminlogin') }}" class="btn btn-danger mx-2">Admin Login</a>
+      </div>
+      <div class="text-center mt-4">
+        <img src="/static/icon.jpg" alt="Service App Banner" class="img-fluid rounded shadow" style="max-width: 400px; height: auto;" />
+      </div>
+    </div>
+    <hr/>
+
+    <div class="text-center mt-4">
+      <center>
+        <h5>
+          Contact Us
+          <br />+91 89*****854 s*****sanjay007@gmail.com
+        </h5>
+        <h6>Royapettah, Chennai, 600014</h6>
+      </center>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
